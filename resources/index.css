@@ -7,6 +7,13 @@ body {
 a {
 	text-decoration: none;
 }
+a:-webkit-any-link {
+	color: white;
+}
+
+input:focus {
+	outline: none;
+}
 
 #container {
 	display: grid;
@@ -31,10 +38,63 @@ header {
 }
 
 #main-nav {
-	background: violet;
-	height: 50px;
-	width: 800px;
+	background: grey;
+	background: linear-gradient(#737373, #5e5e5e 50%, #707070 50%, #898989);
+	height: 30px;
+	max-width: 1000px;
+	border-radius: 5px;
+	box-shadow: -1px 1px 6px 0 rgb(138, 138, 138);
+	margin: 80px auto;
 	display: flex;
+}
+#main-nav ul {
+	flex: 1 1 auto;
+	display: flex;
+}
+
+.main-nav-item {
+	display: flex;
+}
+
+#nav-icon {
+	width: 15px;
+}
+.main-nav-item li {
+	flex: 1 1 80px;
+	border-right: 1px solid black;
+	font-size: 12px;
+}
+.main-nav-item input {
+	background-color: transparent;
+	margin: 0 15px;
+	border-radius: 15px;
+	align-self: center;
+	color: white;
+	padding-left: 10px;
+}
+
+.material-icons-outlined {
+	color: white;
+	font-size: 18px;
+	position: relative;
+	left: -175px;
+	top: 7px;
+}
+
+.nav-link {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+.nav-link span {
+	width: 100%;
+	text-align: center;
+}
+
+#main-nav ul li:hover {
+	background-color: rgba(0, 0, 0, 0.377);
 }
 
 #header-text {
