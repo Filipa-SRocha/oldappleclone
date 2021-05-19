@@ -21,7 +21,7 @@ input:focus {
 	background-color: tomato;
 	grid-template:
 		'header' 550px
-		'promo' 210px
+		'promo' 180px
 		'footer' 70px;
 }
 
@@ -41,7 +41,7 @@ header {
 	background: grey;
 	background: linear-gradient(#737373, #5e5e5e 50%, #707070 50%, #898989);
 	height: 30px;
-	max-width: 1000px;
+	max-width: 900px;
 	border-radius: 5px;
 	box-shadow: -1px 1px 6px 0 rgb(138, 138, 138);
 	margin: 80px auto;
@@ -71,13 +71,14 @@ header {
 	align-self: center;
 	color: white;
 	padding-left: 10px;
+	width: 100px;
 }
 
 .material-icons-outlined {
 	color: white;
 	font-size: 18px;
 	position: relative;
-	left: -175px;
+	left: -110px;
 	top: 7px;
 }
 
@@ -122,6 +123,7 @@ h3 {
 
 aside {
 	grid-area: promo;
+	background-color: white;
 }
 
 img {
@@ -132,4 +134,38 @@ ul {
 	max-width: 100%;
 	display: flex;
 	justify-content: space-between;
+}
+
+/*----footer---*/
+footer {
+	padding: 20px 150px;
+	background-color: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.footer-nav {
+	height: 20px;
+	background-color: white;
+	font-size: 10px;
+}
+.footer-nav li a {
+	color: #08c;
+	border-right: 1px solid #08c;
+	padding-right: 7px;
+}
+
+.footer-text {
+	font-size: 10px;
+}
+.footer-text p:nth-child(2) {
+	margin: 10px 0;
+}
+
+.footer-link {
+	color: #08c;
+}
+
+.footer-link:-webkit-any-link {
+	color: #08c;
 }
